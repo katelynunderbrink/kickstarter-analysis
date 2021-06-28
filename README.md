@@ -1,3 +1,4 @@
+
 # kickstarter-analysis
 Performing Analysis on Kickstarter data to uncover trends
 # Kickstarting with Excel
@@ -18,11 +19,14 @@ I first created a pivot table in a new worksheet and I filtered the pivot table 
 Deliverable 2 - How I performed analysis
 Deliverable 2 was a little more complicated. I first created a new spreadsheet and populated it with the fields I wanted to analyze. I used the "counties" function to populate my columns. I had to nest code within each other to make sure I was filtering for the measures that I wanted. For example, in cell B2 I wanted to place the number of successful campaigns that were less than 1000. To nest the code I had to make sure that the count ifs applied to the kickstarter tab, and filtered for successful campaigns in column F, campaigns that were under or equal to 1000 in column D and filter for plays in column R. The code ended up looking something like this: =COUNTIFS(Kickstarter!$F:$F,"Successful",Kickstarter!$D:$D,"<=1000",Kickstarter!$R:$R,"plays") I then applied this code to the other columns but changed the goal range and outcomes as it pertained to each column. Once I had all this information filled in, I had to create a line graph to show a the percentage of success as the goal range amounts changed. 
 
+![Outcomes_vs_Goals](https://user-images.githubusercontent.com/85354946/123573693-07261500-d794-11eb-8c90-b829e9c85fe8.png)
+![Theater_Outcomes_vs_Launch](https://user-images.githubusercontent.com/85354946/123573749-1c02a880-d794-11eb-832b-23ad0b5e2f97.png)
 
 ### Analysis of Outcomes Based on Launch Date
-
+Successful campaigns were more likely to happen in  the summer months, especially May and were less successful towards the winter months. 
 
 ### Analysis of Outcomes Based on Goals
+Succesful campaigns did not seem  to correspond too much with funding amount with the exception of the higher numbers being less successful. 
 
 ### Challenges and Difficulties Encountered
 
@@ -34,10 +38,8 @@ The biggest challenge I experienced in this was double and triple checking my co
 
 ## Results
 
-- What are two conclusions you can draw about the Outcomes based on Launch Date?
-
-- What can you conclude about the Outcomes based on Goals?
-
 - What are some limitations of this dataset?
+In the outcomes based on launch date, there were not a lot of cases to base the analysis on. The way the funding amount categores were grouped led to very few cases per category so it may not be an accurate analysis. 
 
 - What are some other possible tables and/or graphs that we could create?
+We could look at countries that did better with plays and we could compare the amount of backers to how much the plays earned. 
